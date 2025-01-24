@@ -57,8 +57,8 @@ function App() {
           audio={false}
           ref={webcamRef}
           screenshotFormat="image/jpeg"
-          width={300}
-          height={200}
+          width={600}
+          height={400}
           videoConstraints={{
             facingMode: cameraFacing, // Use the camera facing mode from state
           }}
@@ -67,8 +67,8 @@ function App() {
       </div>
       {isScanning && (
         <BarcodeScannerComponent
-          width={300}
-          height={200}
+          width={600}
+          height={400}
           onUpdate={handleScan}
           delay={1000}
         />
